@@ -1,0 +1,527 @@
+ Escape character: Ctrl-\ (ASCII 28, FS): enabled
+Type the escape character followed by C to get back,
+or followed by ? to see other options.
+----------------------------------------------------
+
+
+U-Boot 2009.08 (Apr 29 2013 - 18:01:51)
+
+CPU: Freescale i.MX6 family TO1.5 at 792 MHz
+Thermal sensor with ratio = 177
+Temperature:   23 C, calibration data 0x5624cb7d
+mx6q pll1: 792MHz
+mx6q pll2: 528MHz
+mx6q pll3: 480MHz
+mx6q pll8: 50MHz
+ipg clock     : 66000000Hz
+ipg per clock : 66000000Hz
+uart clock    : 80000000Hz
+cspi clock    : 60000000Hz
+ahb clock     : 132000000Hz
+axi clock   : 264000000Hz
+emi_slow clock: 132000000Hz
+ddr clock     : 528000000Hz
+usdhc1 clock  : 198000000Hz
+usdhc2 clock  : 198000000Hz
+usdhc3 clock  : 198000000Hz
+usdhc4 clock  : 198000000Hz
+nfc clock     : 24000000Hz
+Board: i.MX6Q-SABRESD: unknown-board Board: 0x63015 [POR ]
+Boot Device: SD
+I2C:   ready
+DRAM:   1 GB
+MMC:   FSL_USDHC: 0,FSL_USDHC: 1,FSL_USDHC: 2,FSL_USDHC: 3
+In:    serial
+Out:   serial
+Err:   serial
+Found PFUZE100! deviceid=10,revid=11
+Net:   got MAC address from IIM: 00:00:00:00:00:00
+FEC0 [PRIME]
+Hit any key to stop autoboot:  0 
+kernel   @ 10808000 (4709132)
+ramdisk  @ 11800000 (183078)
+kernel cmdline: 
+        use uboot command line:
+        console=ttymxc0,115200 androidboot.console=ttymxc0 vmalloc=400M init=/init video=mxcfb0:dev=hdmi,1920x1080M@60,bpp=32 video=mxcfb1:off video=mxcfb2:off fbmem=28M androidboot.hardware=freescale 
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+Initializing cgroup subsys cpu
+Linux version 3.0.35-06114-g3b96084 (enrique@enrique-desktop) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Sat May 11 10:48:26 CDT 2013
+CPU: ARMv7 Processor [412fc09a] revision 10 (ARMv7), cr=10c53c7d
+CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine: Freescale i.MX 6Quad/DualLite/Solo Sabre-SD Board
+Ignoring unrecognised tag 0x54410008
+Memory policy: ECC disabled, Data cache writealloc
+CPU identified as i.MX6Q, unknown revision
+PERCPU: Embedded 7 pages/cpu @c12f5000 s6592 r8192 d13888 u32768
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 203744
+Kernel command line: console=ttymxc0,115200 androidboot.console=ttymxc0 vmalloc=400M init=/init video=mxcfb0:dev=hdmi,1920x1080M@60,bpp=32 video=mxcfb1:off video=mxcfb2:off fbmem=28M androidboot.hardware=freescale
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Memory: 591MB 212MB = 803MB total
+Memory: 803052k/803052k available, 245524k reserved, 413568K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    DMA     : 0xfbe00000 - 0xffe00000   (  64 MB)
+    vmalloc : 0xd9800000 - 0xf2000000   ( 392 MB)
+    lowmem  : 0xc0000000 - 0xd9000000   ( 400 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .init : 0xc0008000 - 0xc0045000   ( 244 kB)
+      .text : 0xc0045000 - 0xc08cacd4   (8728 kB)
+      .data : 0xc08cc000 - 0xc09639e0   ( 607 kB)
+       .bss : 0xc0963a04 - 0xc0aeb748   (1568 kB)
+Preemptible hierarchical RCU implementation.
+NR_IRQS:624
+MXC GPIO hardware
+sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 1431655ms
+arm_max_freq=1GHz
+MXC_Early serial console at MMIO 0x2020000 (options '115200')
+bootconsole [ttymxc0] enabled
+Calibrating delay loop... 1581.05 BogoMIPS (lpj=7905280)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+Initializing cgroup subsys debug
+Initializing cgroup subsys cpuacct
+Initializing cgroup subsys freezer
+CPU: Testing write buffer coherency: ok
+hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+CPU1: Booted secondary processor
+CPU2: Booted secondary processor
+CPU3: Booted secondary processor
+Brought up 4 CPUs
+SMP: Total of 4 processors activated (6324.22 BogoMIPS).
+print_constraints: dummy: 
+NET: Registered protocol family 16
+print_constraints: vddpu: 725 <--> 1300 mV at 700 mV fast normal 
+print_constraints: vddcore: 725 <--> 1300 mV at 1150 mV fast normal 
+print_constraints: vddsoc: 725 <--> 1300 mV at 1200 mV fast normal 
+print_constraints: vdd2p5: 2000 <--> 2775 mV at 2400 mV fast normal 
+print_constraints: vdd1p1: 800 <--> 1400 mV at 1100 mV fast normal 
+print_constraints: vdd3p0: 2625 <--> 3400 mV at 3000 mV fast normal 
+ram_console: got buffer at 3ffe0000, size 20000
+ram_console: uncorrectable error in header
+ram_console: no valid data in buffer (sig = 0x89c809e0)
+console [ram-1] enabled
+No AHCI save PWR: PDDQ enabled
+hw-breakpoint: found 6 breakpoint and 1 watchpoint registers.
+hw-breakpoint: 1 breakpoint(s) reserved for watchpoint single-step.
+hw-breakpoint: maximum watchpoint size is 4 bytes.
+L310 cache controller enabled
+l2x0: 16 ways, CACHE_ID 0x410000c7, AUX_CTRL 0x02070000, Cache size: 1048576 B
+bio: create slab <bio-0> at 0
+mxs-dma mxs-dma-apbh: initialized
+print_constraints: SPKVDD: 4200 mV 
+print_constraints: vmmc: 3300 mV 
+vgaarb: loaded
+SCSI subsystem initialized
+spi_imx imx6q-ecspi.0: probed
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Freescale USB OTG Driver loaded, $Revision: 1.55 $
+mc_pfuze 1-0008: ID: 0,Full lay: 1 ,Metal lay: 1
+mc_pfuze 1-0008: FAB: 0 ,FIN: 0
+print_constraints: PFUZE100_SW1A: 300 <--> 1875 mV at 1300 mV 
+print_constraints: PFUZE100_SW1B: 300 <--> 1875 mV at 300 mV 
+print_constraints: PFUZE100_SW1C: 300 <--> 1875 mV at 1300 mV 
+print_constraints: PFUZE100_SW2: 800 <--> 3950 mV at 3300 mV 
+print_constraints: PFUZE100_SW3A: 400 <--> 1975 mV at 1500 mV 
+print_constraints: PFUZE100_SW3B: 400 <--> 1975 mV at 1500 mV 
+print_constraints: PFUZE100_SW4: 800 <--> 3950 mV at 3150 mV 
+print_constraints: PFUZE100_SWBST: 5000 <--> 5150 mV at 5000 mV 
+print_constraints: PFUZE100_VSNVS: 1200 <--> 3000 mV at 1800 mV 
+print_constraints: PFUZE100_VREFDDR: at 750 mV 
+print_constraints: PFUZE100_VGEN1: 800 <--> 1550 mV at 1500 mV 
+print_constraints: PFUZE100_VGEN2: 800 <--> 1550 mV at 1500 mV 
+print_constraints: PFUZE100_VGEN3: 1800 <--> 3300 mV at 2800 mV 
+print_constraints: PFUZE100_VGEN4: 1800 <--> 3300 mV at 1800 mV 
+print_constraints: PFUZE100_VGEN5: 1800 <--> 3300 mV at 3000 mV 
+print_constraints: PFUZE100_VGEN6: 1800 <--> 3300 mV at 3300 mV 
+imx-ipuv3 imx-ipuv3.0: IPU DMFC NORMAL mode: 1(0~1), 5B(4,5), 5F(6,7)
+imx-ipuv3 imx-ipuv3.1: IPU DMFC NORMAL mode: 1(0~1), 5B(4,5), 5F(6,7)
+mxc_mipi_csi2 mxc_mipi_csi2: i.MX MIPI CSI2 driver probed
+mxc_mipi_csi2 mxc_mipi_csi2: i.MX MIPI CSI2 dphy version is 0x3130302a
+MIPI CSI2 driver module loaded
+Advanced Linux Sound Architecture Driver Version 1.0.24.
+Bluetooth: Core ver 2.16
+NET: Registered protocol family 31
+Bluetooth: HCI device and connection manager initialized
+Bluetooth: HCI socket layer initialized
+Bluetooth: L2CAP socket layer initialized
+Bluetooth: SCO socket layer initialized
+max17135_regulator_init abort: EPDC not enabled
+max17135 2-0048: PMIC MAX17135 for eInk display
+i2c-core: driver [max17135] using legacy suspend method
+i2c-core: driver [max17135] using legacy resume method
+Switching to clocksource mxc_timer1
+NET: Registered protocol family 2
+IP route cache hash table entries: 16384 (order: 4, 65536 bytes)
+TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+TCP: Hash tables configured (established 65536 bind 65536)
+TCP reno registered
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 32
+Unpacking initramfs...
+Freeing initrd memory: 176K
+PMU: registered new PMU device of type 0
+Static Power Management for Freescale i.MX6
+wait mode is enabled for i.MX6
+cpaddr = d9880000 suspend_iram_base=d9930000
+PM driver module loaded
+link up failed, DB_R0:0x0078e800, DB_R1:0x08200000!
+IMX PCIe port: link down with power supply 1!
+IMX usb wakeup probe
+the wakeup pdata is 0xd66f0f60
+add wake up source irq 75
+IMX usb wakeup probe
+the wakeup pdata is 0xd66f0ce0
+cpu regulator mode:ldo_bypass
+_regulator_get: get() with no identifier
+mx6_cpu_regulator_init: failed to get pu regulator
+i.MXC CPU frequency driver
+highmem bounce pool size: 64 pages
+ashmem: initialized
+NTFS driver 2.1.30 [Flags: R/O].
+JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.16)
+msgmni has been set to 761
+NET: Registered protocol family 38
+cryptodev: driver loaded.
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+mxc_mipi_dsi mxc_mipi_dsi: i.MX MIPI DSI driver probed
+MIPI DSI driver module loaded
+mxc_sdc_fb mxc_sdc_fb.0: register mxc display driver hdmi
+mxc_hdmi mxc_hdmi: Detected HDMI controller 0x13:0xa:0xa0:0xc1
+fbcvt: 1920x1080@60: CVT Name - 2.073M9
+imx-ipuv3 imx-ipuv3.1: IPU DMFC DP HIGH RESOLUTION: 1(0,1), 5B(2~5), 5F(6,7)
+mxc_sdc_fb mxc_sdc_fb.1: Can't get fb option for mxcfb1!
+mxc_sdc_fb mxc_sdc_fb.2: Can't get fb option for mxcfb2!
+imx-sdma imx-sdma: loaded firmware 1.1
+imx-sdma imx-sdma: initialized
+Serial: IMX driver
+imx-uart.2: ttymxc2 at MMIO 0x21ec000 (irq = 60) is a IMX
+imx-uart.0: ttymxc0 at MMIO 0x2020000 (irq = 58) is a IMX
+console [ttymxc0] enabled, bootconsole disabled
+console [ttymxc0] enabled, bootconsole disabled
+loop: module loaded
+m25p80 spi0.0: unrecognized JEDEC id ffffff
+GPMI NAND driver registered. (IMX)
+vcan: Virtual CAN interface driver
+CAN device driver interface
+flexcan netdevice driver
+FEC Ethernet Driver
+fec_enet_mii_bus: probed
+PPP generic driver version 2.4.2
+PPP Deflate Compression module registered
+PPP BSD Compression module registered
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+PPTP driver version 0.8.5
+tun: Universal TUN/TAP device driver, 1.6
+tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+fsl-ehci fsl-ehci.0: Freescale On-Chip EHCI Host Controller
+fsl-ehci fsl-ehci.0: new USB bus registered, assigned bus number 1
+fsl-ehci fsl-ehci.0: irq 75, io base 0x02184000
+fsl-ehci fsl-ehci.0: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+add wake up source irq 72
+fsl-ehci fsl-ehci.1: Freescale On-Chip EHCI Host Controller
+fsl-ehci fsl-ehci.1: new USB bus registered, assigned bus number 2
+fsl-ehci fsl-ehci.1: irq 72, io base 0x02184200
+fsl-ehci fsl-ehci.1: USB 2.0 started, EHCI 1.00
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+usbcore: registered new interface driver cdc_acm
+cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver usbserial
+usbserial: USB Serial Driver core
+USB Serial support registered for GSM modem (1-port)
+usbcore: registered new interface driver option
+option: v0.7.2:USB Driver for GSM modems
+USB Serial support registered for Qualcomm USB modem
+usbcore: registered new interface driver qcserial
+ARC USBOTG Device Controller driver (1 August 2005)
+android_usb gadget: Mass Storage Function, version: 2009/09/11
+android_usb gadget: Number of LUNs=1
+ lun0: LUN: removable file: (no medium)
+Gadget Android: controller 'fsl-usb2-udc' not recognized
+android_usb gadget: android_usb ready
+Suspend udc for OTG auto detect
+USB Host suspend begins
+will suspend roothub and its children
+ehci_fsl_bus_suspend begins, DR
+ehci_fsl_bus_suspend ends, DR
+host suspend ends
+USB Gadget resume begins
+fsl_udc_resume, Wait for wakeup thread finishes
+dr_controller_run: udc enter low power mode 
+USB Gadget resume ends
+fsl-usb2-udc: bind to driver android_usb 
+mousedev: PS/2 mouse device common for all mice
+input: gpio-keys as /devices/platform/gpio-keys/input/input0
+input: max11801_ts as /devices/platform/imx-i2c.1/i2c-1/1-0048/input/input1
+egalax_ts 1-0004: egalax_ts: failed to read firmware version
+egalax_ts: probe of 1-0004 failed with error -5
+egalax_ts 2-0004: egalax_ts: failed to read firmware version
+egalax_ts: probe of 2-0004 failed with error -5
+elan - Read Hello Packet Failed
+elan-touch: probe of 2-0010 failed with error -22
+i2c-core: driver [isl29023] using legacy suspend method
+i2c-core: driver [isl29023] using legacy resume method
+using rtc device, snvs_rtc, for alarms
+snvs_rtc snvs_rtc.0: rtc core: registered snvs_rtc as rtc0
+i2c /dev entries driver
+Linux video capture interface: v2.00
+ov5642_read_reg:write reg error:reg=300a
+camera ov5642 is not found
+USB Gadget resume begins
+fsl_udc_resume, Wait for wakeup thread finishes
+ov5640_read_reg:write reg error:reg=300a
+camera ov5640 is not found
+ov5640_read_reg:write reg error:reg=300a
+camera ov5640_mipi is not found
+mxc_v4l2_output mxc_v4l2_output.0: V4L2 device registered as video16
+mxc_v4l2_output mxc_v4l2_output.0: V4L2 device registered as video17
+usbcore: registered new interface driver uvcvideo
+USB Video Class driver (v1.1.0)
+mag3110 2-000e: check mag3110 chip ID
+input: mag3110 as /devices/virtual/input/input2
+mag3110 2-000e: mag3110 is probed
+i2c-core: driver [mag3110] using legacy suspend method
+i2c-core: driver [mag3110] using legacy resume method
+input: mma845x as /devices/virtual/input/input3
+imx2-wdt imx2-wdt.0: IMX2+ Watchdog Timer enabled. timeout=60s (nowayout=1)
+device-mapper: uevent: version 1.0.3
+device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+Bluetooth: Virtual HCI driver ver 1.3
+Bluetooth: HCI UART driver ver 2.2
+Bluetooth: HCIATH3K protocol initialized
+Bluetooth: Generic Bluetooth USB driver ver 0.6
+usbcore: registered new interface driver btusb
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+mmc0: SDHCI controller on platform [sdhci-esdhc-imx.3] using DMA
+mmc1: SDHCI controller on platform [sdhci-esdhc-imx.2] using DMA
+mmc2: SDHCI controller on platform [sdhci-esdhc-imx.1] using DMA
+mxc_vdoa mxc_vdoa: i.MX Video Data Order Adapter(VDOA) driver probed
+VPU initialized
+mxc_asrc registered
+revserved_memory_account:viv_gpu registerd
+Thermal calibration data is 0x5624cb7d
+Thermal sensor with ratio = 177
+Anatop Thermal registered as thermal_zone0
+anatop_thermal_probe: default cooling device is cpufreq!
+Registered led device: chg_now_led
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+logger: created 256K log 'log_main'
+logger: created 256K log 'log_events'
+logger: created 256K log 'log_radio'
+logger: created 256K log 'log_system'
+usbcore: registered new interface driver snd-usb-audio
+mxc_hdmi_soc mxc_hdmi_soc.0: MXC HDMI Audio
+Cirrus Logic CS42888 ALSA SoC Codec Driver
+i2c-core: driver [cs42888] using legacy suspend method
+i2c-core: driver [cs42888] using legacy resume method
+wm8962 0-001a: customer id 0 revision D
+input: WM8962 Beep Generator as /devices/platform/imx-i2c.0/i2c-0/0-001a/input/input4
+mmc0: new high speed DDR MMC card at address 0001
+asoc: wm8962 <-> imx-ssi.1 mapping ok
+input: wm8962-audio DMIC as /devices/platform/soc-audio.5/sound/card0/input5
+mmcblk0: mmc0:0001 MMC08G 7.31 GiB 
+mmcblk0boot0: mmc0:0001 MMC08G partition 1 2.00 MiB
+input: wm8962-audio Headphone Jack as /devices/platform/soc-audio.5/sound/card0/input6
+mmcblk0boot1: mmc0:0001 MMC08G partition 2 2.00 MiB
+imx_3stack asoc driver
+ mmcblk0: unknown partition table
+asoc: mxc-hdmi-soc <-> imx-hdmi-soc-dai.0 mapping ok
+ALSA device list:
+  #0: wm8962-audio
+  #1: imx-hdmi-soc
+oprofile: using arm/armv7-ca9
+GACT probability NOT on
+Mirror/redirect action on
+u32 classifier
+    Actions configured
+Netfilter messages via NETLINK v0.30.
+ mmcblk0boot1: unknown partition table
+nf_conntrack version 0.5.0 (12550 buckets, 50200 max)
+ctnetlink v0.93: registering with nfnetlink.
+NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+ mmcblk0boot0: unknown partition table
+xt_time: kernel timezone is -0000
+IPv4 over IPv4 tunneling driver
+GRE over IPv4 demultiplexor driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+arp_tables: (C) 2002 David S. Miller
+TCP cubic registered
+NET: Registered protocol family 10
+Mobile IPv6
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+can: controller area network core (rev 20090105 abi 8)
+NET: Registered protocol family 29
+can: raw protocol (rev 20090105)
+can: broadcast manager protocol (rev 20090105 t)
+Bluetooth: RFCOMM TTY layer initialized
+Bluetooth: RFCOMM socket layer initialized
+Bluetooth: RFCOMM ver 1.11
+Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Bluetooth: BNEP filters: protocol multicast
+Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+L2TP core driver, V2.0
+PPPoL2TP kernel driver, V2.0
+L2TP IP encapsulation support (L2TPv3)
+L2TP netlink interface
+L2TP ethernet pseudowire support (L2TPv3)
+lib80211: common routines for IEEE802.11 drivers
+lib80211_crypt: registered algorithm 'NULL'
+lib80211_crypt: registered algorithm 'WEP'
+lib80211_crypt: registered algorithm 'CCMP'
+lib80211_crypt: registered algorithm 'TKIP'
+VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+Bus freq driver module loaded
+Bus freq driver Enabled
+mxc_dvfs_core_probe
+DVFS driver module loaded
+regulator_init_complete: PFUZE100_VGEN6: incomplete constraints, leaving on
+regulator_init_complete: PFUZE100_VGEN3: incomplete constraints, leaving on
+regulator_init_complete: PFUZE100_VGEN2: incomplete constraints, leaving on
+regulator_init_complete: PFUZE100_VGEN1: incomplete constraints, leaving on
+snvs_rtc snvs_rtc.0: setting system clock to 1970-01-01 00:00:01 UTC (1)
+Freeing init memory: 244K
+init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+android_usb: already disabled
+android_usb: already disabled
+mtp_bind_config
+input: eCompass as /devices/virtual/input/input7
+root@android:/ # ERROR: v4l2 capture: slave not found!
+ERROR: v4l2 capture: slave not found!
+ERROR: v4l2 capture: slave not found!
+ERROR: v4l2 capture: slave not found!
+ERROR: v4l2 capture: slave not found!
+ERROR: v4l2 capture: slave not found!
+ERROR: v4l2 capture: slave not found!
+ERROR: v4l2 capture: slave not found!
+ERROR: HDMI is not ready!
+asoc: can't open platform imx-hdmi-soc-audio.0
+warning: `zygote' uses 32-bit capabilities (legacy support in use)
+request_suspend_state: wakeup (3->0) at 22190988670 (1970-01-02 00:00:09.269837668 UTC)
+cpufreq_interactive_input_connect: connect to max11801_ts
+mma enable setting active
+eth0: Freescale FEC PHY driver [Generic PHY] (mii_bus:phy_addr=1:01, irq=-1)
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+acc_open
+acc_release
+ehci_fsl_bus_resume begins, Host 1
+ehci_fsl_bus_resume ends, Host 1
+ehci_fsl_bus_resume begins, DR
+ehci_fsl_bus_suspend begins, Host 1
+ehci_fsl_bus_suspend ends, Host 1
+init: sys_prop: permission denied uid:1003  name:service.bootanim.exit
+request_suspend_state: sleep (0->3) at 37373669673 (1970-01-02 00:00:24.452517004 UTC)
+mma enable setting inactive
+PM: Syncing filesystems ... done.
+PM: Preparing system for mem sleep
+suspend: start 1 suspend...
+suspend: finish 1 suspend after:0.2690667 seconds...
+Freezing user space processes ... (elapsed 0.01 seconds) done.
+Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+PM: Entering mem sleep
+Suspending console(s) (use no_console_suspend to debug)
+USB Host suspend begins
+ehci_fsl_drv_suspend, pm event 
+host suspend ends
+udc suspend begins
+USB Gadget suspend ends
+USB Host suspend begins
+ehci_fsl_drv_suspend, pm event 
+host suspend ends
+add wake up source irq 101
+add wake up source irq 99
+add wake up source irq 103
+add wake up source irq 51
+PM: suspend of devices complete after 8.937 msecs
+PM: late suspend of devices complete after 0.680 msecs
+Disabling non-boot CPUs ...
+CPU1: shutdown
+CPU2: shutdown
+CPU3: shutdown
+Enabling non-boot CPUs ...
+wakeup wake lock: event0-2589
+CPU1: Booted secondary processor
+Calibrating delay loop (skipped) already calibrated this CPU
+i.MXC CPU frequency driver
+CPU1 is up
+CPU2: Booted secondary processor
+Calibrating delay loop (skipped) already calibrated this CPU
+i.MXC CPU frequency driver
+CPU2 is up
+CPU3: Booted secondary processor
+Calibrating delay loop (skipped) already calibrated this CPU
+i.MXC CPU frequency driver
+CPU3 is up
+PM: early resume of devices complete after 0.483 msecs
+imx-ipuv3 imx-ipuv3.0: IPU DMFC DP HIGH RESOLUTION: 1(0,1), 5B(2~5), 5F(6,7)
+imx-ipuv3 imx-ipuv3.1: IPU DMFC DP HIGH RESOLUTION: 1(0,1), 5B(2~5), 5F(6,7)
+remove wake up source irq 51
+remove wake up source irq 103
+remove wake up source irq 101
+remove wake up source irq 99
+ehci fsl drv resume begins: DR
+ehci_fsl_drv_resume,pm event, wait for wakeup irq if needed
+USB Gadget resume begins
+fsl_udc_resume, Wait for wakeup thread finishes
+ehci_fsl_bus_resume begins, DR
+dr_controller_run: udc enter low power mode 
+USB Gadget resume ends
+ehci fsl drv resume begins: Host 1
+ehci_fsl_drv_resume,pm event, wait for wakeup irq if needed
+ehci_fsl_bus_resume begins, Host 1
+ehci_fsl_bus_resume ends, Host 1
+PM: resume of devices complete after 70.749 msecs
+PM: Finishing wakeup.
+Restarting tasks ... done.
+suspend: finish 1 suspend after:126.631032664 seconds...
+suspend: exit suspend, ret = 0 (1970-01-02 00:02:31.212606005 UTC)
+request_suspend_state: wakeup (3->0) at 37913921672 (1970-01-02 00:02:31.293272332 UTC)
+mma enable setting active
+cpufreq_interactive_input_connect: connect to max11801_ts
+mmc1: Starting deferred resume
+ehci_fsl_bus_suspend begins, Host 1
+ehci_fsl_bus_suspend ends, Host 1
+mmc1: Deferred resume completed
+mma enable setting inactive
+request_suspend_state: sleep (0->3) at 48365138340 (1970-01-02 00:02:41.744487000 UTC)
+PM: Syncing filesystems ... done.
+PM: Preparing system for mem sleep
+suspend: start 2 suspend...
+suspend: finish 2 suspend after:0.2648333 seconds...
+Freezing user space processes ... (elapsed 0.19 seconds) done.
+Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+PM: Entering mem sleep
+Suspending console(s) (use no_console_suspend to debug)
+
+ 
